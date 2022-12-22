@@ -566,7 +566,6 @@
     <Content Include="global_assets\images\logo_icon.png" />
     <Content Include="global_assets\images\logo_icon_dark.png" />
     <Content Include="global_assets\images\logo_icon_light.png" />
-    <Content Include="global_assets\images\logo_icon_new.png" />
     <Content Include="global_assets\images\logo_light.png" />
     <Content Include="global_assets\images\logo_new.png" />
     <Content Include="global_assets\images\logo_orange.png" />
