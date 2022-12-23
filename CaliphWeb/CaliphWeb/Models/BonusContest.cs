@@ -1,4 +1,4 @@
-﻿namespace CaliphWeb.Models
+﻿namespace BeyondCode.Models
 {
     public class BonusContest {
         public double BonusPercent { get; set; }

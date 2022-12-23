@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.Project100RecruitmentViewModel
+﻿@model BeyondCode.Models.ViewModel.Project100RecruitmentViewModel
 <style>
     .table {
         width: 100%;
@@ -64,7 +64,7 @@
         var ct = count - loopRecruitData.Count;
         for (int c = 1; c <= ct; c++)
         {
-            loopRecruitData.Add(new  CaliphWeb.Models.API.AgentRecruit.AgentRecruiment());
+            loopRecruitData.Add(new  BeyondCode.Models.API.AgentRecruit.AgentRecruiment());
         }
 
         @*<img src=@server.mappath("~/global_assets/images/project100_banner.png") style="width:100%;" object-fit:cover" />*@

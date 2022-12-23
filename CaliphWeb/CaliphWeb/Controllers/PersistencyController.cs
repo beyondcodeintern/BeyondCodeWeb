@@ -1,16 +1,16 @@
 ﻿using AutoMapper;
-using CaliphWeb.Core;
-using CaliphWeb.Helper;
-using CaliphWeb.Helper.Mapper;
-using CaliphWeb.Models.API;
-using CaliphWeb.Models.API.AgentRecruit;
-using CaliphWeb.Models.API.Event.Response;
-using CaliphWeb.Models.API.one2one;
-using CaliphWeb.Models.ViewModel;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+using BeyondCode.Core;
+using BeyondCode.Helper;
+using BeyondCode.Helper.Mapper;
+using BeyondCode.Models.API;
+using BeyondCode.Models.API.AgentRecruit;
+using BeyondCode.Models.API.Event.Response;
+using BeyondCode.Models.API.one2one;
+using BeyondCode.Models.ViewModel;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
     [Authorize]
     public class PersistencyController : Controller

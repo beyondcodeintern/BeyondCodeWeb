@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaliphWeb.Models.API
+namespace BeyondCode.Models.API
 {
     public class ClientLead
     {

@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.EventPaymentListViewModel
+﻿@model BeyondCode.Models.ViewModel.EventPaymentListViewModel
 
 @{
     ViewBag.Title = "Event Payment List";
@@ -148,7 +148,7 @@
 
         function SearchData(page) {
         @{
-            var filter = new CaliphWeb.Models.ViewModel.EventFilterViewModel();
+            var filter = new BeyondCode.Models.ViewModel.EventFilterViewModel();
             }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

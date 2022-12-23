@@ -54,7 +54,7 @@
 
             @if (User.Identity.IsAuthenticated && Session["user"] != null)
             {
-                var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();
+                var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();
                 <li class="nav-item nav-item-dropdown-lg dropdown dropdown-user h-100">
                     <a href="#" class="navbar-nav-link navbar-nav-link-toggler dropdown-toggle d-inline-flex align-items-center h-100" data-toggle="dropdown">
                         <span class="d-none d-lg-inline-block">@user.Fullname</span>
@@ -100,7 +100,7 @@
                             <div class="media-body">
                                 @if (User.Identity.IsAuthenticated && Session["user"] != null)
                                 {
-                                    var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();
+                                    var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();
                                     <div class="font-weight-semibold">@user.Fullname</div>
                                     <div class="font-size-sm line-height-sm opacity-50">
                                         @user.RoleName
@@ -127,9 +127,9 @@
                         @if (User.Identity.IsAuthenticated && Session["user"] != null)
                         {
 
-                            var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();
+                            var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();
                             var mainMenus = (from a in user.MenuList
-                                             select new CaliphWeb.Models.API.User.MainMenu { Name = a.MainMenuName, Id = a.MainMenuId }).ToList();
+                                             select new BeyondCode.Models.API.User.MainMenu { Name = a.MainMenuName, Id = a.MainMenuId }).ToList();
 
                             <li class="nav-item-header">
                                 <div class="text-uppercase font-size-xs line-height-xs">MAIN</div>

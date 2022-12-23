@@ -1,10 +1,10 @@
-﻿using CaliphWeb.Models.API;
+﻿using BeyondCode.Models.API;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.ViewModel
+namespace BeyondCode.ViewModel
 {
     public class Referral
     {

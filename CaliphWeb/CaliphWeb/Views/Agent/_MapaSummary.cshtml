@@ -1,5 +1,5 @@
 ﻿
-@model CaliphWeb.Models.ViewModel.MapaCalculatorViewModel
+@model BeyondCode.Models.ViewModel.MapaCalculatorViewModel
  
 <div class="row form-group">
 
@@ -25,9 +25,9 @@
             <tr>
                 @{
 
-                    var budgetSummary = Model.PlannedMapa[i - 1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-                    var previousYearAchieved = Model.PreviousYearActualMapa[i - 1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-                    var currentYearAchieved = Model.CurrentYearActualMapa[i - 1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                    var budgetSummary = Model.PlannedMapa[i - 1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+                    var previousYearAchieved = Model.PreviousYearActualMapa[i - 1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+                    var currentYearAchieved = Model.CurrentYearActualMapa[i - 1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
                     var percent = budgetSummary.ACE == 0 ? 0 : (currentYearAchieved.ACE / budgetSummary.ACE) * 100;
                     var percentACEGrowth = previousYearAchieved.ACE == 0 ? 0 : ((currentYearAchieved.ACE - previousYearAchieved.ACE) / previousYearAchieved.ACE) * 100;
 

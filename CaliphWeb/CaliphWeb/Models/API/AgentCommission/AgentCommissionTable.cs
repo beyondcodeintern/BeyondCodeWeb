@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CaliphWeb.Models.API.Agent;
+using BeyondCode.Models.API.Agent;
 
-namespace CaliphWeb.Models.API
+namespace BeyondCode.Models.API
 {
     public class AgentCommissionTable
     {

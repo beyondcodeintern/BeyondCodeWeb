@@ -1,18 +1,18 @@
 ﻿using AutoMapper;
-using CaliphWeb.Core;
-using CaliphWeb.Helper;
-using CaliphWeb.Helper.Mapper;
-using CaliphWeb.Models;
-using CaliphWeb.Models.API;
-using CaliphWeb.Models.API.AgentRecruit;
-using CaliphWeb.Models.API.Deal;
-using CaliphWeb.Models.API.UserActivity.Request;
-using CaliphWeb.Models.API.UserActivity.Response;
-using CaliphWeb.Models.ViewModel;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+using BeyondCode.Core;
+using BeyondCode.Helper;
+using BeyondCode.Helper.Mapper;
+using BeyondCode.Models;
+using BeyondCode.Models.API;
+using BeyondCode.Models.API.AgentRecruit;
+using BeyondCode.Models.API.Deal;
+using BeyondCode.Models.API.UserActivity.Request;
+using BeyondCode.Models.API.UserActivity.Response;
+using BeyondCode.Models.ViewModel;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -22,7 +22,7 @@ using System.Web;
 using System.Web.Mvc;
 using Google.Apis.Calendar;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
 
     [Authorize]

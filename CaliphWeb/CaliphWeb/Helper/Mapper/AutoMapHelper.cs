@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Helper.Mapper
+namespace BeyondCode.Helper.Mapper
 {
     public class AutoMapHelper
     {

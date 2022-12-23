@@ -1,4 +1,4 @@
-﻿namespace CaliphWeb.Models.ViewModel
+﻿namespace BeyondCode.Models.ViewModel
 {
     public class FileUploadViewModel
     {

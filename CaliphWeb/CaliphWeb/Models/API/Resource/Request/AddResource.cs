@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API.Resource.Request
+namespace BeyondCode.Models.API.Resource.Request
 {
     public class AddResource
     {

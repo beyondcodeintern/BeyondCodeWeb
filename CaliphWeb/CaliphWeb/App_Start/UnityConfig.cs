@@ -1,12 +1,12 @@
-using CaliphWeb.Core.Helper;
-using CaliphWeb.Helper;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
+using BeyondCode.Core.Helper;
+using BeyondCode.Helper;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
 using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
 
-namespace CaliphWeb
+namespace BeyondCode
 {
     public static class UnityConfig
     {

@@ -2,9 +2,9 @@
 @{
     ViewBag.Title = "Archive";
 }
-@using CaliphWeb.Helper
+@using BeyondCode.Helper
 
-@model  CaliphWeb.Models.ViewModel.ClientListViewModel
+@model  BeyondCode.Models.ViewModel.ClientListViewModel
 
 <!-- Page header -->
 <div class="page-header page-header-light">
@@ -44,7 +44,7 @@
                         <label class="m-1">
                             <span>Status:</span>
                             <select class="custom-select" id="status">
-                                @foreach (var source in Model.Status.Where(p=> p.Name == CaliphWeb.ViewModel.Data.MasterDataEnum.Status.Archive.ToString()))
+                                @foreach (var source in Model.Status.Where(p=> p.Name == BeyondCode.ViewModel.Data.MasterDataEnum.Status.Archive.ToString()))
                                 {
                                     <option value="@source.MasterDataId">@source.Name</option>
                                 }
@@ -82,7 +82,7 @@
 
     <script type="text/javascript">
         function SearchData(page) {
-            @{ var filter = new CaliphWeb.ViewModel.Data.ClientFilterRequest();
+            @{ var filter = new BeyondCode.ViewModel.Data.ClientFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

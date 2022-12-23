@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Calendar";
 }
-@model CaliphWeb.Models.ViewModel.AddActivityViewModel
+@model BeyondCode.Models.ViewModel.AddActivityViewModel
 <script src="~/global_assets/js/demo_pages/form_input_groups.js"></script>
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
 <script src="~/global_assets/js/demo_pages/form_validation.js"></script>
@@ -99,7 +99,7 @@
                             <option value="">Select</option>
                             @foreach (var user in Model.AgentUsers)
                             {
-                                var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                                var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                                 <option value="@user.UserId" @selected>@user.Username</option>
                             }
 
@@ -570,7 +570,7 @@
             }
         });
         function SearchAgent() {
-            var login = '@CaliphWeb.Helper.UserHelper.GetLoginUserViewModel().UserId';
+            var login = '@BeyondCode.Helper.UserHelper.GetLoginUserViewModel().UserId';
             var createdBy = $('#CreatedBy').val();
 
             if (login === createdBy) {

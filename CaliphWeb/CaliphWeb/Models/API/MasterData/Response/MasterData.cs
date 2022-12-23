@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaliphWeb.ViewModel
+namespace BeyondCode.ViewModel
 {
     public class MasterData
     {

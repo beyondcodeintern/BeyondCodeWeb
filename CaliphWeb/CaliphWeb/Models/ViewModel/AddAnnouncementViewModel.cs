@@ -1,8 +1,8 @@
-﻿using CaliphWeb.Models.API.Agent;
-using CaliphWeb.ViewModel;
+﻿using BeyondCode.Models.API.Agent;
+using BeyondCode.ViewModel;
 using System.Collections.Generic;
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class AddAnnouncementViewModel
     {

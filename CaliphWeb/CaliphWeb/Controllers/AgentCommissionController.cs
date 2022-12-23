@@ -1,25 +1,25 @@
-﻿using CaliphWeb.Core;
-using CaliphWeb.Helper;
-using CaliphWeb.Helper.Mapper;
-using CaliphWeb.Models.API.AgentRecruit;
-using CaliphWeb.Models.API.Agent;
-using CaliphWeb.Models.ViewModel;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+﻿using BeyondCode.Core;
+using BeyondCode.Helper;
+using BeyondCode.Helper.Mapper;
+using BeyondCode.Models.API.AgentRecruit;
+using BeyondCode.Models.API.Agent;
+using BeyondCode.Models.ViewModel;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using CaliphWeb.Models.API;
+using BeyondCode.Models.API;
 using AutoMapper;
-using CaliphWeb.Models;
+using BeyondCode.Models;
 using System.Web.Script.Serialization;
 using System.Text;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
     public class AgentCommissionController : Controller
     {

@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "List";
 }
-@model CaliphWeb.Models.ViewModel.ActivityListViewModel
+@model BeyondCode.Models.ViewModel.ActivityListViewModel
 
 <script src="~/global_assets/js/demo_pages/form_input_groups.js"></script>
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
@@ -177,7 +177,7 @@
         });
 
         function SearchData(page) {
-            @{ var filter = new CaliphWeb.Models.API.ActivityFilterRequest();
+            @{ var filter = new BeyondCode.Models.API.ActivityFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;
@@ -201,7 +201,7 @@
 
         }
         function Edit(id, activityPointId) {
-            var refLeads = @((int)CaliphWeb.ViewModel.Data.MasterDataEnum.ActivityPoint.ReferralsLead);
+            var refLeads = @((int)BeyondCode.ViewModel.Data.MasterDataEnum.ActivityPoint.ReferralsLead);
 
             if (activityPointId === refLeads) {
                 ShowEditRefLeads(id);
@@ -405,8 +405,8 @@
 
           function ConfirmUpdate(id, status) {
 
-            var done = @((int)CaliphWeb.ViewModel.Data.MasterDataEnum.Status.Done);
-            var missed = @((int)CaliphWeb.ViewModel.Data.MasterDataEnum.Status.Missed);
+            var done = @((int)BeyondCode.ViewModel.Data.MasterDataEnum.Status.Done);
+            var missed = @((int)BeyondCode.ViewModel.Data.MasterDataEnum.Status.Missed);
 
                 var udpateStatus = "";
               if (status === done)
@@ -446,7 +446,7 @@
                 data: { status: status, id: id },
                 success: function (response) {
                     if (response.IsSuccess) {
-                        var done = @((int)CaliphWeb.ViewModel.Data.MasterDataEnum.Status.Done);
+                        var done = @((int)BeyondCode.ViewModel.Data.MasterDataEnum.Status.Done);
                         if (status === done)
                             ShowDoneSuccess();
                         else {

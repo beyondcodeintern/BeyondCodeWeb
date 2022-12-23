@@ -3,7 +3,7 @@
     ViewBag.Title = "ClientSummary";
 }
 
-@model CaliphWeb.Models.ViewModel.ClientSummaryViewModel
+@model BeyondCode.Models.ViewModel.ClientSummaryViewModel
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
 <!-- Page header -->
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                @{ var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();}
+                @{ var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();}
                 @if (!user.IsAgent && !user.IsPotentialAgent)
                 {
 
@@ -89,7 +89,7 @@
                 @*<select required data-placeholder="Agent Name" id="CreatedBy" name="select2" class="form-control select-search" data-fouc>
             @foreach (var user in Model.Users)
             {
-                var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                 <option value="@user.Username" @selected>@user.Username</option>
             }
         </select>*@
@@ -158,7 +158,7 @@
         }
 
         function SearchData() {
-            @{ var filter = new CaliphWeb.Models.API.Report.ClientSummaryRequest();
+            @{ var filter = new BeyondCode.Models.API.Report.ClientSummaryRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.CreatedBy = $('#CreatedBy').val();

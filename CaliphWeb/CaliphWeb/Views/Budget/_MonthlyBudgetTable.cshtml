@@ -1,5 +1,5 @@
 ﻿
-@model CaliphWeb.Models.API.Budget.Monthly
+@model BeyondCode.Models.API.Budget.Monthly
 
 @{
     //high end
@@ -62,13 +62,13 @@
                 for (int i = 1; i <= totalRow; i++)
                 {
 
-                    var monthlyLowEndDetails = new CaliphWeb.Models.API.Budget.BudgetMonthly();
+                    var monthlyLowEndDetails = new BeyondCode.Models.API.Budget.BudgetMonthly();
                     if (lowEndCount >= i)
                     {
                         monthlyLowEndDetails = monthlyLowEnds.ToArray()[i - 1];
                     }
 
-                    var monhtlyHighEndDetails = new CaliphWeb.Models.API.Budget.BudgetMonthly();
+                    var monhtlyHighEndDetails = new BeyondCode.Models.API.Budget.BudgetMonthly();
                     if (highEndCount >= i)
                     {
                         monhtlyHighEndDetails = monthlyHighEnds.ToArray()[i - 1];

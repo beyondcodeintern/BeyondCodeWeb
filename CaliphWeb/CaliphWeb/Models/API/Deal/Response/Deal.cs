@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CaliphWeb.Models.API;
+using BeyondCode.Models.API;
 
-namespace CaliphWeb.Models.API.Deal
+namespace BeyondCode.Models.API.Deal
 {
     public class Deal
     {

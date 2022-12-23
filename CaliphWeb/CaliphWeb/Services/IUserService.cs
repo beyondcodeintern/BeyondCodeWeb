@@ -1,10 +1,10 @@
-﻿using CaliphWeb.Core;
-using CaliphWeb.Models.API.Agent;
-using CaliphWeb.ViewModel;
+﻿using BeyondCode.Core;
+using BeyondCode.Models.API.Agent;
+using BeyondCode.ViewModel;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CaliphWeb.Services
+namespace BeyondCode.Services
 {
     public interface IUserService
     {

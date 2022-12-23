@@ -3,8 +3,8 @@
     ViewBag.Title = "Deal";
 }
 
-@using CaliphWeb.ViewModel.Data
-@model CaliphWeb.Models.ViewModel.DealListViewModel
+@using BeyondCode.ViewModel.Data
+@model BeyondCode.Models.ViewModel.DealListViewModel
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
 <script src="~/global_assets/js/demo_pages/components_collapsible.js"></script>
@@ -91,7 +91,7 @@
                                 <option value="">All</option>
                                 @foreach (var user in Model.Users)
                                 {
-                                    var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                                    var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                                     <option value="@user.Username" @selected>@(user.Username+"-"+user.Fullname)</option>
                                 }
                                
@@ -272,7 +272,7 @@
         }
 
          function SearchData(page) {
-            @{ var filter = new CaliphWeb.Models.API.Deal.DealFilterRequest();
+            @{ var filter = new BeyondCode.Models.API.Deal.DealFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

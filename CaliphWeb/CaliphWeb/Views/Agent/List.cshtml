@@ -3,8 +3,8 @@
     ViewBag.Title = "Deal";
 }
 
-@using CaliphWeb.ViewModel.Data
-@model CaliphWeb.Models.ViewModel.AgentRecruitListViewModel
+@using BeyondCode.ViewModel.Data
+@model BeyondCode.Models.ViewModel.AgentRecruitListViewModel
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
 <script src="~/global_assets/js/demo_pages/components_collapsible.js"></script>
@@ -298,7 +298,7 @@
         }
 
          function SearchData(page) {
-            @{ var filter = new CaliphWeb.Models.API.AgentRecruit.FiltertAgentRecruitRequest();
+            @{ var filter = new BeyondCode.Models.API.AgentRecruit.FiltertAgentRecruitRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

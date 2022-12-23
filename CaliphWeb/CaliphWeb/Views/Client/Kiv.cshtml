@@ -1,8 +1,8 @@
 ﻿
 @{ ViewBag.Title = "KIV"; }
-@using CaliphWeb.Helper
+@using BeyondCode.Helper
 
-@model  CaliphWeb.Models.ViewModel.ClientListViewModel
+@model  BeyondCode.Models.ViewModel.ClientListViewModel
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
 
 <!-- Page header -->
@@ -136,7 +136,7 @@
 
 
          function SearchData(page) {
-            @{ var filter = new CaliphWeb.ViewModel.Data.ClientFilterRequest();
+            @{ var filter = new BeyondCode.ViewModel.Data.ClientFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

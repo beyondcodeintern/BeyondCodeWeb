@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.EventListViewModel
+﻿@model BeyondCode.Models.ViewModel.EventListViewModel
 
 @{
     ViewBag.Title = "List";
@@ -149,7 +149,7 @@
         });
         function SearchData(page) {
         @{
-            var filter = new CaliphWeb.Models.ViewModel.EventFilterViewModel();
+            var filter = new BeyondCode.Models.ViewModel.EventFilterViewModel();
             }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;
@@ -182,7 +182,7 @@
 
         function SearchAttendance(page, eventId, eventDateId) {
             @{
-                var attendanceFilter = new CaliphWeb.Models.ViewModel.EventFilterViewModel();
+                var attendanceFilter = new BeyondCode.Models.ViewModel.EventFilterViewModel();
                 }
 
             var searchFilter = @Html.Raw(Json.Encode(attendanceFilter));

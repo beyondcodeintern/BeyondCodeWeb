@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.AddAnnouncementViewModel
+﻿@model BeyondCode.Models.ViewModel.AddAnnouncementViewModel
 @{
     ViewBag.Title = "Add";
 }
@@ -103,7 +103,7 @@
                         <option value="">Select</option>
                         @foreach (var user in Model.AgentUsers)
                         {
-                            var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                            var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                             <option value="@user.UserId" @selected>@user.Username - @user.Fullname</option>
                         }
                     </select>
@@ -137,7 +137,7 @@
 
             var selectType = $('#AnnouncementType').val()
             console.log(selectType);
-            if (selectType == '@( (int)CaliphWeb.ViewModel.Data.MasterDataEnum.AnnouncementType.All)') {
+            if (selectType == '@( (int)BeyondCode.ViewModel.Data.MasterDataEnum.AnnouncementType.All)') {
                 $('#agent-list').hide();
             }
             else {

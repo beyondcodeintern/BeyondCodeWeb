@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace CaliphWeb
+namespace BeyondCode
 {
     public class BundleConfig
     {

@@ -1,10 +1,10 @@
-﻿using CaliphWeb.Core;
-using CaliphWeb.Core.Helper;
-using CaliphWeb.Helper;
-using CaliphWeb.Models.API.Agent;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+﻿using BeyondCode.Core;
+using BeyondCode.Core.Helper;
+using BeyondCode.Helper;
+using BeyondCode.Models.API.Agent;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -14,7 +14,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace CaliphWeb.Services
+namespace BeyondCode.Services
 {
     public partial class UserService : IUserService
     {

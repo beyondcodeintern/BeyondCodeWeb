@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API.Client.Response
+namespace BeyondCode.Models.API.Client.Response
 {
     public class ClientFamily
     {

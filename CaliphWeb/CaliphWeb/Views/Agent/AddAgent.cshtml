@@ -1,6 +1,6 @@
 ﻿
 
-@using CaliphWeb.Models.ViewModel;
+@using BeyondCode.Models.ViewModel;
 
 
 <script src="~/global_assets/js/demo_pages/form_validation.js"></script>
@@ -82,7 +82,7 @@
                                 @if (User.Identity.IsAuthenticated && Session["user"] != null)
                                 {
 
-                                    var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();
+                                    var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();
                                     if (user.IsLeader)
                                     {
                                         <input type="text" id="upline_username" name="UplineUsername" value="@user.Username" class="form-control" required>

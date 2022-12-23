@@ -1,10 +1,10 @@
-﻿using CaliphWeb.ViewModel;
+﻿using BeyondCode.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class AddDealViewModel
     {

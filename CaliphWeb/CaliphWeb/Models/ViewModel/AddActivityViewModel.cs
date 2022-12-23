@@ -1,13 +1,13 @@
-﻿using CaliphWeb.Models.API;
-using CaliphWeb.Models.API.Agent;
-using CaliphWeb.Models.API.Deal;
-using CaliphWeb.ViewModel;
+﻿using BeyondCode.Models.API;
+using BeyondCode.Models.API.Agent;
+using BeyondCode.Models.API.Deal;
+using BeyondCode.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class AddActivityViewModel
     {

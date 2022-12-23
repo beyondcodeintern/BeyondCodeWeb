@@ -1,4 +1,4 @@
-﻿namespace CaliphWeb.Models.API.Deal
+﻿namespace BeyondCode.Models.API.Deal
 {
     public class UpdateDealRequest
     {

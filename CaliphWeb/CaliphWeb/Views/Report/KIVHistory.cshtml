@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "KIVHistory";
 }
-@model CaliphWeb.Models.ViewModel.RevertKIVReportViewModel
+@model BeyondCode.Models.ViewModel.RevertKIVReportViewModel
 
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
@@ -55,7 +55,7 @@
                         <option value="">All</option>
                         @foreach (var user in Model.Users)
                         {
-                            var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                            var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                             <option value="@user.Username" @selected>@user.Username</option>
                         }
 
@@ -107,7 +107,7 @@
 
 
         function SearchData(page) {
-            @{ var filter = new CaliphWeb.Models.API.Report.GetRevertKIVRequest();
+            @{ var filter = new BeyondCode.Models.API.Report.GetRevertKIVRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
 

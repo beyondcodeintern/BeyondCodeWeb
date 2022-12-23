@@ -1,6 +1,6 @@
-﻿@using CaliphWeb.ViewModel.Data;
-@using CaliphWeb.Helper
-@model CaliphWeb.Models.API.Budget.BudgetModel
+﻿@using BeyondCode.ViewModel.Data;
+@using BeyondCode.Helper
+@model BeyondCode.Models.API.Budget.BudgetModel
 @{ var m115 = Model.Monthly.BudgetMonthly.Where(p => p.MonthlyBudgetTypeId == 115);}
 @{ var m116 = Model.Monthly.BudgetMonthly.Where(p => p.MonthlyBudgetTypeId == 116);}
 @{ var actual = m115.Sum(p => p.AchieveValue) + m116.Sum(p => p.AchieveValue);}

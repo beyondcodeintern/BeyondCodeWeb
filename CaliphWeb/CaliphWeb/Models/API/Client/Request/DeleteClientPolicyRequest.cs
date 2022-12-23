@@ -1,4 +1,4 @@
-﻿namespace CaliphWeb.Models.API.Client.Request
+﻿namespace BeyondCode.Models.API.Client.Request
 {
     public class DeleteClientPolicyRequest
     {

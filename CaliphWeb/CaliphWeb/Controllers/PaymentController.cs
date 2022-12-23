@@ -1,13 +1,13 @@
-﻿using CaliphWeb.Core;
-using CaliphWeb.Helper;
-using CaliphWeb.Helper.Mapper;
-using CaliphWeb.Models.API.Event.Request;
-using CaliphWeb.Models.API.Event.Response;
-using CaliphWeb.Models.ViewModel;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+﻿using BeyondCode.Core;
+using BeyondCode.Helper;
+using BeyondCode.Helper.Mapper;
+using BeyondCode.Models.API.Event.Request;
+using BeyondCode.Models.API.Event.Response;
+using BeyondCode.Models.ViewModel;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using Newtonsoft.Json;
 using Stripe;
 using System;
@@ -24,7 +24,7 @@ using System.Web.Hosting;
 using System.Web.Mvc;
 using System.Security.Cryptography;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
     public class PaymentController : Controller
     {

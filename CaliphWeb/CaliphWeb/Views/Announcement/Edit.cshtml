@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.EditAnnouncementViewModel
+﻿@model BeyondCode.Models.ViewModel.EditAnnouncementViewModel
 @{
     ViewBag.Title = "Edit";
 }
@@ -100,7 +100,7 @@
             </div>
 
 
-            @if (Model.Announcement.AnnouncementTypeId == (int)CaliphWeb.ViewModel.Data.MasterDataEnum.AnnouncementType.Specific)
+            @if (Model.Announcement.AnnouncementTypeId == (int)BeyondCode.ViewModel.Data.MasterDataEnum.AnnouncementType.Specific)
             {
             <div class="form-group row">
                 <label class="col-form-label col-lg-3">Agent<span class="text-danger">*</span></label>

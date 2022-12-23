@@ -1,21 +1,21 @@
-﻿using CaliphWeb.Core;
-using CaliphWeb.Helper;
-using CaliphWeb.Helper.Mapper;
-using CaliphWeb.Models.API;
-using CaliphWeb.Models.API.Deal;
-using CaliphWeb.Models.API.Deal.Request;
-using CaliphWeb.Models.Data.Client.Request;
-using CaliphWeb.Models.ViewModel;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+﻿using BeyondCode.Core;
+using BeyondCode.Helper;
+using BeyondCode.Helper.Mapper;
+using BeyondCode.Models.API;
+using BeyondCode.Models.API.Deal;
+using BeyondCode.Models.API.Deal.Request;
+using BeyondCode.Models.Data.Client.Request;
+using BeyondCode.Models.ViewModel;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
     [Authorize]
     public class DealController : Controller

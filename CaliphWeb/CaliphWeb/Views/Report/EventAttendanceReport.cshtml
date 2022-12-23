@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "AttendanceReport";
 }
-@model CaliphWeb.Models.ViewModel.AttendanceReportViewModel
+@model BeyondCode.Models.ViewModel.AttendanceReportViewModel
 
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
@@ -157,7 +157,7 @@
         });
 
         function SearchData(page) {
-            @{ var filter = new CaliphWeb.Models.ViewModel.EventFilterViewModel();
+            @{ var filter = new BeyondCode.Models.ViewModel.EventFilterViewModel();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
 
@@ -187,7 +187,7 @@
 
 
         function SearchExport() {
-            @{ var filterExport = new CaliphWeb.Models.ViewModel.EventFilterViewModel();
+            @{ var filterExport = new BeyondCode.Models.ViewModel.EventFilterViewModel();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filterExport));
 

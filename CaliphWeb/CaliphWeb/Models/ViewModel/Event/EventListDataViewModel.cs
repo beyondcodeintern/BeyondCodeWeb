@@ -1,8 +1,8 @@
-﻿using CaliphWeb.Models.API.Event.Response;
-using CaliphWeb.Models.Data;
+﻿using BeyondCode.Models.API.Event.Response;
+using BeyondCode.Models.Data;
 using System.Collections.Generic;
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class EventListDataViewModel
     {

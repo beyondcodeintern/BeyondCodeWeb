@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CaliphWeb.Helper
+namespace BeyondCode.Helper
 {
     public static class LinqExtension {
 

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CaliphWeb.Models.API.Agent;
-using CaliphWeb.Models.API.Resource;
-using CaliphWeb.Models.Data;
-using CaliphWeb.ViewModel;
+using BeyondCode.Models.API.Agent;
+using BeyondCode.Models.API.Resource;
+using BeyondCode.Models.Data;
+using BeyondCode.ViewModel;
 
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class ResourceListViewModel
     {

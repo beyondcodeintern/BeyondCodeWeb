@@ -1,5 +1,5 @@
 ﻿
-@model CaliphWeb.Models.ViewModel.MapaCalculatorViewModel
+@model BeyondCode.Models.ViewModel.MapaCalculatorViewModel
 
 
 
@@ -59,13 +59,13 @@
     <tr>
         @{
 
-            var previousAchived = previousMonths == 12 ? Model.PreviousYearActualMapa[11] : Model.CurrentYearActualMapa[previousMonths-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+            var previousAchived = previousMonths == 12 ? Model.PreviousYearActualMapa[11] : Model.CurrentYearActualMapa[previousMonths-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
             <td>ACE</td>
             <td>@previousAchived.ACE</td>
             foreach (var month in Model.Months)
             {
-                var personalBudget = Model.PlannedMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                var personalBudget = Model.PlannedMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
                 var todo = personalBudget.ACE - personalAchived.ACE;
 
                 <td id="@("personal_ace"+month)">@personalBudget.ACE</td>
@@ -80,8 +80,8 @@
             <td>@previousAchived.ActiveAgent</td>
             foreach (var month in Model.Months)
             {
-                var personalBudget = Model.PlannedMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                var personalBudget = Model.PlannedMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
                 var todo = personalBudget.ActiveAgent - personalAchived.ActiveAgent;
 
                 <td id="@("personal_activeagent"+month)">@personalBudget.ActiveAgent</td>
@@ -96,8 +96,8 @@
             <td>@previousAchived.NewRecruit</td>
             foreach (var month in Model.Months)
             {
-                var personalBudget = Model.PlannedMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                var personalBudget = Model.PlannedMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
                 var todo = personalBudget.NewRecruit - personalAchived.NewRecruit;
 
                 <td id="@("personal_newrecruit"+month)">@personalBudget.NewRecruit</td>
@@ -112,8 +112,8 @@
             <td>@previousAchived.YtdRecruit</td>
             foreach (var month in Model.Months)
             {
-                var personalBudget = Model.PlannedMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                var personalBudget = Model.PlannedMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
                 var todo = personalBudget.YtdRecruit - personalAchived.YtdRecruit;
 
                 <td id="@("personal_ytdrecruit"+month)">@personalBudget.YtdRecruit</td>
@@ -128,8 +128,8 @@
             <td>@previousAchived.TotalCases</td>
             foreach (var month in Model.Months)
             {
-                var personalBudget = Model.PlannedMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                var personalBudget = Model.PlannedMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+                var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
                 var todo = personalBudget.TotalCases - personalAchived.TotalCases;
 
                 <td id="@("personal_totalcases"+month)">@personalBudget.TotalCases</td>
@@ -167,8 +167,8 @@
 
     @foreach (var month in Model.Months)
     {
-        var personalBudget = Model.PlannedMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
-        var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+        var personalBudget = Model.PlannedMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
+        var personalAchived = Model.CurrentYearActualMapa[month-1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
         var todo = personalBudget.TotalCases - personalAchived.TotalCases;
        var  date = new DateTime(DateTime.Now.Year, month, 1);
         <tr>
