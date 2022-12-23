@@ -6,7 +6,7 @@ using System.Net.Mail;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace CaliphWeb.Services
+namespace BeyondCode.Services
 {
     public class EmailService
     {

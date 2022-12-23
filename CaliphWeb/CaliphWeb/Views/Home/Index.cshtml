@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-@model CaliphWeb.Models.ViewModel.IndexViewModel
+@model BeyondCode.Models.ViewModel.IndexViewModel
 
 
 
@@ -323,7 +323,7 @@
 
             </div>
         </div>
-        @{ var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel(); }
+        @{ var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel(); }
         @if (user.IsLeader || user.IsAgent)
         {
     <div class="row">

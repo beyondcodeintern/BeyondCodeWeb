@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaliphWeb.Models.API.Report
+namespace BeyondCode.Models.API.Report
 {
     public class KIVRevertHistory
     {

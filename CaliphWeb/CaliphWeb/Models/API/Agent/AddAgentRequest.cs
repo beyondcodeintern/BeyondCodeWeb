@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API.Agent
+namespace BeyondCode.Models.API.Agent
 {
     public class AddAgentRequest
     {

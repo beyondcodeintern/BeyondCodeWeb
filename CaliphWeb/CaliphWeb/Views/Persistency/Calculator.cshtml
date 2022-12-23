@@ -1,6 +1,6 @@
 ﻿
-@model CaliphWeb.ViewModel.PersistencyCalculatorViewModel
-@using CaliphWeb.ViewModel
+@model BeyondCode.ViewModel.PersistencyCalculatorViewModel
+@using BeyondCode.ViewModel
 @{
     ViewBag.Title = "Calculator";
 }
@@ -564,7 +564,7 @@ pie_donut_element.setOption(option);
 
         });
         function SearchData(page) {
-            @{ var filter = new CaliphWeb.ViewModel.PersistencyCalculatorViewModel
+            @{ var filter = new BeyondCode.ViewModel.PersistencyCalculatorViewModel
                 {
                    AgentId = Model.AgentId,
                    AgentName= Model.AgentName

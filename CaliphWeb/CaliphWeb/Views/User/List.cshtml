@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.UserListViewModel
+﻿@model BeyondCode.Models.ViewModel.UserListViewModel
 
 @{
     ViewBag.Title = "List";
@@ -186,7 +186,7 @@
 
         function SearchData(page) {
         @{
-            var filter = new CaliphWeb.Models.ViewModel.UserFilterViewModel();
+            var filter = new BeyondCode.Models.ViewModel.UserFilterViewModel();
             }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

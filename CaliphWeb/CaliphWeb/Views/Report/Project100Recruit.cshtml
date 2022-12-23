@@ -3,7 +3,7 @@
     ViewBag.Title = "Project100";
 }
 
-@model CaliphWeb.Models.ViewModel.Project100RecruitmentViewModel
+@model BeyondCode.Models.ViewModel.Project100RecruitmentViewModel
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
 <!-- Page header -->
@@ -46,7 +46,7 @@
                                 <input type="text" id="CreatedDate" class="form-control daterange-basic" value="01/01/2015 - 01/31/2015">
                             </div>
                         </label>
-                        @{ var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();}
+                        @{ var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();}
                         @if (!user.IsAgent&& !user.IsPotentialAgent)
                         {
                             <label class="m-1">
@@ -157,7 +157,7 @@
 
 
         function SearchData() {
-               @{ var filter = new CaliphWeb.ViewModel.Data.ClientFilterRequest();
+               @{ var filter = new BeyondCode.ViewModel.Data.ClientFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.CreatedBy = $('#CreatedBy').val();

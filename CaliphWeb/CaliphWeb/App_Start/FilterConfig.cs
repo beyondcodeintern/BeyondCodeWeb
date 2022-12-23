@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace CaliphWeb
+namespace BeyondCode
 {
     public class FilterConfig
     {

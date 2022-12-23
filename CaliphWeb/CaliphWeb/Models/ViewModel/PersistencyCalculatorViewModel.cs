@@ -1,9 +1,9 @@
-﻿using CaliphWeb.Models.API.one2one;
+﻿using BeyondCode.Models.API.one2one;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CaliphWeb.ViewModel
+namespace BeyondCode.ViewModel
 {
     public class PersistencyCalculatorViewModel
     {

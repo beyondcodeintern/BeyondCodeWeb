@@ -1,6 +1,6 @@
-﻿@model CaliphWeb.Models.ViewModel.EditEventViewModel
+﻿@model BeyondCode.Models.ViewModel.EditEventViewModel
 @using System.Globalization;
-@using CaliphWeb.Helper;
+@using BeyondCode.Helper;
 
 @{
     ViewBag.Title = "Info";
@@ -322,7 +322,7 @@
 
         function UpdateInfo() {
             @{
-                var info = new CaliphWeb.Models.ViewModel.EventUserViewModel();
+                var info = new BeyondCode.Models.ViewModel.EventUserViewModel();
                 }
 
             var updateInfo = @Html.Raw(Json.Encode(info));
@@ -350,7 +350,7 @@
 
         function SearchData(page) {
             @{
-                var filter = new CaliphWeb.Models.ViewModel.EventFilterViewModel();
+                var filter = new BeyondCode.Models.ViewModel.EventFilterViewModel();
                 }
 
             var searchFilter = @Html.Raw(Json.Encode(filter));

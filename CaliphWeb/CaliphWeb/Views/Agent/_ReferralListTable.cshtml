@@ -1,5 +1,5 @@
-﻿@using CaliphWeb.Helper
-@model  CaliphWeb.Models.ViewModel.AgentRecruitmentLeadData
+﻿@using BeyondCode.Helper
+@model  BeyondCode.Models.ViewModel.AgentRecruitmentLeadData
 
 
 
@@ -31,7 +31,7 @@
             <td>@item.CreatedBy</td>
 
             <td><span class="@bagdes">@item.StatusDesc</span></td>
-            @if (item.StatusId == (int)CaliphWeb.ViewModel.Data.MasterDataEnum.Status.Leads)
+            @if (item.StatusId == (int)BeyondCode.ViewModel.Data.MasterDataEnum.Status.Leads)
             {
             <td class="text-center">
                 <a href="@Url.Action("Add", "Client", new { ClientId = 0,  AgentRecruitId = item.AgentLeadId })" data-popup="tooltip" title="Convert to Client" data-placement="right" href="#" class="list-icons-item">

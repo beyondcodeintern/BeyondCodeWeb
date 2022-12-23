@@ -79,7 +79,7 @@
                                     <input type="radio" onclick="SelectType('individual')" class="custom-control-input" name="cr-i-l" id="cr_l_i_s" checked="">
                                     <label class="custom-control-label" for="cr_l_i_s">Individual</label>
                                 </div>
-                                @if (CaliphWeb.Helper.UserHelper.GetLoginUserViewModel().RoleId != (int)CaliphWeb.ViewModel.Data.MasterDataEnum.RoleId.Agent)
+                                @if (BeyondCode.Helper.UserHelper.GetLoginUserViewModel().RoleId != (int)BeyondCode.ViewModel.Data.MasterDataEnum.RoleId.Agent)
                                 {
                                 <div class="custom-control custom-radio custom-control-inline">
                                     <input type="radio" onclick="SelectType('group')" class="custom-control-input" name="cr-i-l" id="cr_l_i_u">
@@ -111,7 +111,7 @@
                         <span>Agent:</span>
                     </label> <div class="col-lg-8">
     <select required onchange="SearchWithUser(this)" data-placeholder="Agent" id="CreatedBy" name="select2" class="form-control select-search" data-fouc>
-        @{ var user = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();}
+        @{ var user = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();}
        
             <option value="@user.Username">@user.Username - @user.Fullname</option>
     
@@ -126,7 +126,7 @@
                     <option value="">Select</option>
                     @foreach (var user in Model.AgentUsers)
                     {
-                        var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                        var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                         <option value="@user.Username" @selected>@user.Username</option>
                     }
                 </select>
@@ -254,7 +254,7 @@
         function SelectType(type) {
             if (type == 'individual') {
                 $('#agent-select').hide();
-                createdby = '@CaliphWeb.Helper.UserHelper.GetLoginUser()';
+                createdby = '@BeyondCode.Helper.UserHelper.GetLoginUser()';
             }
             else if (type == 'group') {
                 $('#agent-select').show();

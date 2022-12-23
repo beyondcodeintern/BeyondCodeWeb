@@ -1,10 +1,10 @@
-﻿using CaliphWeb.Models.API;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+﻿using BeyondCode.Models.API;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CaliphWeb.Services
+namespace BeyondCode.Services
 {
     public interface IMasterDataService
     {

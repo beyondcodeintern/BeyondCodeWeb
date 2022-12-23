@@ -4,8 +4,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@using CaliphWeb.ViewModel.Data
-@model CaliphWeb.Models.ViewModel.ResourceListViewModel
+@using BeyondCode.ViewModel.Data
+@model BeyondCode.Models.ViewModel.ResourceListViewModel
 <!-- Page header -->
 <div class="page-header page-header-light">
     <div class="page-header-content header-elements-lg-inline">
@@ -117,6 +117,7 @@
         <tr>
             <td data-toggle="collapse" class="text-body" href="#accordion-control-3" style="cursor:pointer">1</td>
             <td data-toggle="collapse" class="text-body" href="#accordion-control-3" style="cursor:pointer">Example data</td>
+            <td data-toggle="collapse" class="text-body" href="#accordion-control-3" style="cursor:pointer">Example url</td>
             <td data-toggle="collapse" class="text-body" href="#accordion-control-3" style="cursor:pointer">4976</td>
             <td data-toggle="collapse" class="text-body" href="#accordion-control-3" style="cursor:pointer">superadmin</td>
             <td data-toggle="collapse" class="text-body" href="#accordion-control-3" style="cursor:pointer">2022-11-25 16:23</td>
@@ -565,7 +566,7 @@
 
         });
         function SearchData(page) {
-            @{ var filter = new CaliphWeb.ViewModel.Data.ClientFilterRequest();
+            @{ var filter = new BeyondCode.ViewModel.Data.ClientFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

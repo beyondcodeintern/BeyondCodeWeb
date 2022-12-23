@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CaliphWeb.Helper
+namespace BeyondCode.Helper
 {
     public static class DateTimeExtensions
     {

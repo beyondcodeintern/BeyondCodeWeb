@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API.Event.Response
+namespace BeyondCode.Models.API.Event.Response
 {
     public class EventListResponse
     {

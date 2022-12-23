@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API.Activity.Request
+namespace BeyondCode.Models.API.Activity.Request
 {
     public class GetLeadRequest
     {

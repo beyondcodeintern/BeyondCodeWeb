@@ -1,10 +1,10 @@
-﻿using CaliphWeb.ViewModel;
+﻿using BeyondCode.ViewModel;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
 
-namespace CaliphWeb.Helper
+namespace BeyondCode.Helper
 {
     public class UserHelper
     {

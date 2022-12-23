@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace CaliphWeb.Services.Helper
+namespace BeyondCode.Services.Helper
 {
     public interface ICaliphAPIHelper
     {

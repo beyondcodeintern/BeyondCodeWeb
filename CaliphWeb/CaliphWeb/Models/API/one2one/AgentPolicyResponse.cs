@@ -1,7 +1,7 @@
-﻿using CaliphWeb.Helper;
+﻿using BeyondCode.Helper;
 using System;
 
-namespace CaliphWeb.Models.API.one2one
+namespace BeyondCode.Models.API.one2one
 {
     public class AgentPolicyResponse
     {

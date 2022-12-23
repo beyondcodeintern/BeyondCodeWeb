@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Summary";
 }
-@model CaliphWeb.Models.API.AgentCommissionTable
+@model BeyondCode.Models.API.AgentCommissionTable
 <script src="~/global_assets/js/plugins/visualization/echarts/echarts.min.js"></script>
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
 <script src="~/global_assets/js/demo_pages/components_modals.js"></script>
@@ -55,7 +55,7 @@
                                 <option value="">Select</option>
                                 @foreach (var user in Model.Agents)
                                 {
-                                    var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                                    var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                                     <option value="@user.Username" @selected>@user.Username</option>
                                 }
                             </select>
@@ -292,7 +292,7 @@
 
         function SearchData() {
             @{
-                var filter = new CaliphWeb.Models.API.AgentCommissionFilter();
+                var filter = new BeyondCode.Models.API.AgentCommissionFilter();
                 }
                 var searchFilter = @Html.Raw(Json.Encode(filter));
                 searchFilter.Year1 = $('#year1').val();

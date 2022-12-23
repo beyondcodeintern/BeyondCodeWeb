@@ -1,5 +1,5 @@
-﻿using CaliphWeb.Core.Helper;
-using CaliphWeb.ViewModel;
+﻿using BeyondCode.Core.Helper;
+using BeyondCode.ViewModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestSharp;
@@ -11,7 +11,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace CaliphWeb.Services.Helper
+namespace BeyondCode.Services.Helper
 {
     public class One2OneApiHelper : IOne2OneApiHelper
     {

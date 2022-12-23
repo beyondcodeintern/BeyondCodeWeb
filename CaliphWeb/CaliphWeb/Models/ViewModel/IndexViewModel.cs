@@ -1,11 +1,11 @@
-﻿using CaliphWeb.Models.API.Announcement.Response;
-using CaliphWeb.Models.API.one2one;
+﻿using BeyondCode.Models.API.Announcement.Response;
+using BeyondCode.Models.API.one2one;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class IndexViewModel
     {

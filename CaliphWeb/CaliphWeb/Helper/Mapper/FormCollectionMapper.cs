@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CaliphWeb.Helper.Mapper
+namespace BeyondCode.Helper.Mapper
 {
     public class FormCollectionMapper
     {

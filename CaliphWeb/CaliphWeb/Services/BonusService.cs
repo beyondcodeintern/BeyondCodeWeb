@@ -1,7 +1,7 @@
-﻿using CaliphWeb.Models;
+﻿using BeyondCode.Models;
 using System.Collections.Generic;
 
-namespace CaliphWeb.Services
+namespace BeyondCode.Services
 {
 
     public class BonusService

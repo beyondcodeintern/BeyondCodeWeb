@@ -5,10 +5,10 @@ using System.Web;
 
 using System.Net;
 using System.Net.Mail;
-using CaliphWeb.Models;
-using CaliphWeb.Models.API;
+using BeyondCode.Models;
+using BeyondCode.Models.API;
 
-namespace CaliphWeb.Helper
+namespace BeyondCode.Helper
 {
     public class EmailHelper
     {

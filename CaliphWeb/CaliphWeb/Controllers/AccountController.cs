@@ -1,11 +1,11 @@
 ﻿using Caliph.Library.Helper;
-using CaliphWeb.Core;
-using CaliphWeb.Core.Helper;
-using CaliphWeb.Helper;
-using CaliphWeb.Models.API;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
+using BeyondCode.Core;
+using BeyondCode.Core.Helper;
+using BeyondCode.Helper;
+using BeyondCode.Models.API;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security.Cookies;
 using System;
@@ -18,7 +18,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
     public class AccountController : Controller
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaliphWeb.ViewModel.Data
+namespace BeyondCode.ViewModel.Data
 {
     public class UpdateActivityRequest
     {

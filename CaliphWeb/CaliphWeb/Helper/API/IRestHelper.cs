@@ -5,7 +5,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace CaliphWeb.Core.Helper
+namespace BeyondCode.Core.Helper
 {
     public interface IRestHelper
     {

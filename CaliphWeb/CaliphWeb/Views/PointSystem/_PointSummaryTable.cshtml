@@ -1,4 +1,4 @@
-﻿@using CaliphWeb.Models.ViewModel;
+﻿@using BeyondCode.Models.ViewModel;
 @model PointSummaryTable
 
 
@@ -64,7 +64,7 @@
         @foreach (var pointSummary in summary.PointSummaries)
         {
             var totalPoint = pointSummary.PointReceive * summary.Point;
-            var jsonPost = new CaliphWeb.Models.ViewModel.PointSummaryPostDetailsFilter { StartDate = pointSummary.Date, EndDate = pointSummary.Date.AddDays(1).AddMinutes(-1), ActivityId = summary.ActivityPointId };
+            var jsonPost = new BeyondCode.Models.ViewModel.PointSummaryPostDetailsFilter { StartDate = pointSummary.Date, EndDate = pointSummary.Date.AddDays(1).AddMinutes(-1), ActivityId = summary.ActivityPointId };
             var onclickElement = totalPoint > 0 ? "onclick=ViewDetails("+ Html.Raw(Json.Encode(jsonPost)) +") " : "";
             var hrefValue = totalPoint > 0 ? "href=#" : "";
             <td><a   @hrefValue  @onclickElement>@pointSummary.PointReceive</a></td>

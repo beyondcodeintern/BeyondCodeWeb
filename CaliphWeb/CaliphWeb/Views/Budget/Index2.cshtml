@@ -10,9 +10,9 @@
 @*<script src="~/global_assets/js/pages/budget.js?v1"></script>*@
 <!-- Page header -->
 @using Newtonsoft.Json
-@using CaliphWeb.ViewModel.Data;
-@using CaliphWeb.Helper
-@model CaliphWeb.Models.API.Budget.BudgetModel
+@using BeyondCode.ViewModel.Data;
+@using BeyondCode.Helper
+@model BeyondCode.Models.API.Budget.BudgetModel
 
 <div class="page-header page-header-light">
     <div class="page-header-content header-elements-lg-inline">
@@ -1188,7 +1188,7 @@
         }
 
         function RefreshMonthlyBudgetTable() {
-            @{ var filter = new CaliphWeb.Models.API.Budget.MonthlyFilter();
+            @{ var filter = new BeyondCode.Models.API.Budget.MonthlyFilter();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             var selectedMonthYear = $('#monthly-month').val();

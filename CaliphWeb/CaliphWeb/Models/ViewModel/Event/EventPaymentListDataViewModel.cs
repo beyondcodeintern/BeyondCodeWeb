@@ -1,11 +1,11 @@
-﻿using CaliphWeb.Models.API.Event.Response;
-using CaliphWeb.Models.Data;
+﻿using BeyondCode.Models.API.Event.Response;
+using BeyondCode.Models.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class EventPaymentListDataViewModel
     {

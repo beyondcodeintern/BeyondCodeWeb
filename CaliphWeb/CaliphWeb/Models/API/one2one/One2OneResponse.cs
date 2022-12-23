@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CaliphWeb.Models.API.one2one
+namespace BeyondCode.Models.API.one2one
 {
     public class One2OneResponse<T>
     {

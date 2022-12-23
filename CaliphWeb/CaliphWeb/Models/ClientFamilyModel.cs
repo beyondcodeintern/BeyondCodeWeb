@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaliphWeb.Models
+namespace BeyondCode.Models
 {
     public class ClientFamilyModel {
         public int ClientFamilyId { get; set; }

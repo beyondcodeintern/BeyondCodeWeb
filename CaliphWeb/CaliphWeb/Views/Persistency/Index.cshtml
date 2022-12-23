@@ -1,6 +1,6 @@
 ﻿
-@model CaliphWeb.ViewModel.PersistencyCalculatorViewModel
-@using CaliphWeb.ViewModel
+@model BeyondCode.ViewModel.PersistencyCalculatorViewModel
+@using BeyondCode.ViewModel
 
 <script src="~/global_assets/js/demo_pages/components_collapsible.js"></script>
 <script src="~/global_assets/js/demo_pages/picker_date.js"></script>
@@ -9,7 +9,7 @@
     <div class="card-header">
     </div>
     <div class="card-body">
-        @{ var loginUser = CaliphWeb.Helper.UserHelper.GetLoginUserViewModel();}
+        @{ var loginUser = BeyondCode.Helper.UserHelper.GetLoginUserViewModel();}
 
         <div class=" table-responsive">
             <div class="row">
@@ -270,7 +270,7 @@
             if (hasExpand == 1) {
                 return;
             }
-        @{ var filter = new CaliphWeb.ViewModel.PersistencyCalculatorViewModel();}
+        @{ var filter = new BeyondCode.ViewModel.PersistencyCalculatorViewModel();}
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.StartDate = $('#CreatedDate').data().daterangepicker.startDate._d.toJSON();
             searchFilter.EndDate = $('#CreatedDate').data().daterangepicker.endDate._d.toJSON();
@@ -291,7 +291,7 @@
 
 
            function DisplayCalculator(agent, type, name) {
-        @{ var filterCalculator = new CaliphWeb.ViewModel.PersistencyCalculatorViewModel();}
+        @{ var filterCalculator = new BeyondCode.ViewModel.PersistencyCalculatorViewModel();}
             var searchFilter = @Html.Raw(Json.Encode(filterCalculator));
             searchFilter.StartDate = $('#CreatedDate').data().daterangepicker.startDate._d.toJSON();
                searchFilter.EndDate = $('#CreatedDate').data().daterangepicker.endDate._d.toJSON();
@@ -322,7 +322,7 @@
 
 
            function SearchSummaryData() {
-            @{ var filterSummary = new CaliphWeb.ViewModel.PersistencyCalculatorViewModel
+            @{ var filterSummary = new BeyondCode.ViewModel.PersistencyCalculatorViewModel
                 {
                    AgentId = Model.AgentId,
                    AgentName= Model.AgentName
@@ -376,7 +376,7 @@
             $('#leder_new_pp_ratio_' + leaderid).text(ReplaceNumberWithCommas(leaderRatio.toFixed(2)) + '%');
 
 
-            var loginAgent = '@CaliphWeb.Helper.UserHelper.GetLoginUser()';
+            var loginAgent = '@BeyondCode.Helper.UserHelper.GetLoginUser()';
             //var currentGroupPP = parseFloat($('#leder_new_pp_' + loginAgent).text().replaceAll(',', ''));
             //var currentGroupAce = parseFloat($('#ace_leader_' + loginAgent).text().replaceAll(',', ''));
             //var newGroupPP = currentGroupPP - currentRowPreviousCalculatedPP + parseFloat(newpp.toFixed(2));

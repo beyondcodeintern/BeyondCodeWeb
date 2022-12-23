@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using CaliphWeb.ViewModel;
+using BeyondCode.ViewModel;
 
 
-namespace CaliphWeb.Models.API.Budget
+namespace BeyondCode.Models.API.Budget
 {
     public class BudgetModel
     {
@@ -51,13 +51,13 @@ namespace CaliphWeb.Models.API.Budget
         public Monthly()
         {
             BudgetMonthly = new List<BudgetMonthly>();
-            Clients = new List<CaliphWeb.ViewModel.Client>();
+            Clients = new List<BeyondCode.ViewModel.Client>();
         }
         public List<BudgetMonthly> BudgetMonthly { get; set; }
         public int Month { get; set; }
         public int Year { get; set; }
         public decimal MonthlyBudget { get; set; }
-        public List<CaliphWeb.ViewModel.Client> Clients { get; set; }
+        public List<BeyondCode.ViewModel.Client> Clients { get; set; }
     }
 
     public class Strategy

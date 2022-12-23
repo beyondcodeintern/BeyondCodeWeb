@@ -1,11 +1,11 @@
 ﻿using Caliph.Library.Helper;
-using CaliphWeb.Core;
-using CaliphWeb.Helper;
-using CaliphWeb.Models.API;
-using CaliphWeb.Models.ViewModel;
-using CaliphWeb.Services;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel.Data;
+using BeyondCode.Core;
+using BeyondCode.Helper;
+using BeyondCode.Models.API;
+using BeyondCode.Models.ViewModel;
+using BeyondCode.Services;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
     public class UserController : Controller
     {

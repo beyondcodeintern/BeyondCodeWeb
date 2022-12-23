@@ -1,6 +1,6 @@
 ﻿
-@model CaliphWeb.ViewModel.PersistencyCalculatorViewModel
-@using CaliphWeb.ViewModel
+@model BeyondCode.ViewModel.PersistencyCalculatorViewModel
+@using BeyondCode.ViewModel
 <div class="card">
     <div class="card-header">
         <h5 class="card-title">Product Summary</h5>
@@ -417,10 +417,10 @@
 
     <div class="card-body">
         @*update here*@
-        @{ var term_20years = Model.AgentPolicies.Where(x => CaliphWeb.Helper.ConvertHelper.ConvertInt(x.term) >= 20);
-            var term_10to19years = Model.AgentPolicies.Where(x => CaliphWeb.Helper.ConvertHelper.ConvertInt(x.term) >= 10 && CaliphWeb.Helper.ConvertHelper.ConvertInt(x.term) <= 19);
-            var term_6to9years = Model.AgentPolicies.Where(x => CaliphWeb.Helper.ConvertHelper.ConvertInt(x.term) >= 6 && CaliphWeb.Helper.ConvertHelper.ConvertInt(x.term) <= 9);
-            var term_5years = Model.AgentPolicies.Where(x => CaliphWeb.Helper.ConvertHelper.ConvertInt(x.term) <= 5);
+        @{ var term_20years = Model.AgentPolicies.Where(x => BeyondCode.Helper.ConvertHelper.ConvertInt(x.term) >= 20);
+            var term_10to19years = Model.AgentPolicies.Where(x => BeyondCode.Helper.ConvertHelper.ConvertInt(x.term) >= 10 && BeyondCode.Helper.ConvertHelper.ConvertInt(x.term) <= 19);
+            var term_6to9years = Model.AgentPolicies.Where(x => BeyondCode.Helper.ConvertHelper.ConvertInt(x.term) >= 6 && BeyondCode.Helper.ConvertHelper.ConvertInt(x.term) <= 9);
+            var term_5years = Model.AgentPolicies.Where(x => BeyondCode.Helper.ConvertHelper.ConvertInt(x.term) <= 5);
 
             double totalTermRatio = 0;
             double totalTerm = 0;

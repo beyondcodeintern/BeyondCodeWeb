@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace CaliphWeb.ViewModel
+namespace BeyondCode.ViewModel
 {
     public class StripePaymentItem
     {

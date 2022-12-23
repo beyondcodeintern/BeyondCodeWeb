@@ -1,4 +1,4 @@
-﻿using CaliphWeb.Models.ViewModel;
+﻿using BeyondCode.Models.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CaliphWeb.Controllers
+namespace BeyondCode.Controllers
 {
     public class FileUploadController : Controller
     {

@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.MapaCalculatorViewModel
+﻿@model BeyondCode.Models.ViewModel.MapaCalculatorViewModel
 @*<div class="row form-group">
     <div class="col-md-3">
         Year
@@ -49,7 +49,7 @@
                 }
                 @foreach (var actual in Model.CurrentYearActualMapa.OrderBy(x => x.Month))
                 {
-                    var plannedmapa = Model.PlannedMapa[actual.Month - 1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                    var plannedmapa = Model.PlannedMapa[actual.Month - 1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
 
                     totalQuarterAce += actual.ACE;
                     <tr>
@@ -197,7 +197,7 @@
                 {
                     totalQuarterAce += actual.ACE;
                    
-                    var plannedmapa = Model.PlannedMapa[actual.Month - 1] ?? new CaliphWeb.Models.ViewModel.MapaPlanning();
+                    var plannedmapa = Model.PlannedMapa[actual.Month - 1] ?? new BeyondCode.Models.ViewModel.MapaPlanning();
             <tr>
                 @{ DateTime date = new DateTime(DateTime.Now.Year, actual.Month, 1); ;
                     var aceAverage = totalAce == 0 ? 0 : ((decimal)actual.ACE / totalAce) * 100;

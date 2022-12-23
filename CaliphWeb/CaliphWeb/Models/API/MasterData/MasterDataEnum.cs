@@ -1,4 +1,4 @@
-﻿namespace CaliphWeb.ViewModel.Data
+﻿namespace BeyondCode.ViewModel.Data
 {
     public class MasterDataEnum
     {

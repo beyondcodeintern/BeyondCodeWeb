@@ -1,16 +1,16 @@
-﻿using CaliphWeb.Core;
-using CaliphWeb.Helper;
-using CaliphWeb.Models.API;
-using CaliphWeb.Services.Helper;
-using CaliphWeb.ViewModel;
-using CaliphWeb.ViewModel.Data;
+﻿using BeyondCode.Core;
+using BeyondCode.Helper;
+using BeyondCode.Models.API;
+using BeyondCode.Services.Helper;
+using BeyondCode.ViewModel;
+using BeyondCode.ViewModel.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 
-namespace CaliphWeb.Services
+namespace BeyondCode.Services
 {
     public class MasterDataService : IMasterDataService
     {

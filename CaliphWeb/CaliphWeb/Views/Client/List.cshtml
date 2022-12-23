@@ -2,9 +2,9 @@
 @{
     ViewBag.Title = "Index";
 }
-@using CaliphWeb.Helper
-@using CaliphWeb.ViewModel.Data;
-@model  CaliphWeb.Models.ViewModel.ClientListViewModel
+@using BeyondCode.Helper
+@using BeyondCode.ViewModel.Data;
+@model  BeyondCode.Models.ViewModel.ClientListViewModel
 
 <!-- Page header -->
 <div class="page-header page-header-light">
@@ -114,7 +114,7 @@
 
         });
         function SearchData(page) {
-            @{ var filter = new CaliphWeb.ViewModel.Data.ClientFilterRequest();
+            @{ var filter = new BeyondCode.ViewModel.Data.ClientFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

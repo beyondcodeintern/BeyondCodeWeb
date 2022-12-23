@@ -1,10 +1,10 @@
-﻿using CaliphWeb.Models.ViewModel;
+﻿using BeyondCode.Models.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API
+namespace BeyondCode.Models.API
 {
     public class ActivityPoint
     {

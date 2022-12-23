@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API.UserActivity.Response
+namespace BeyondCode.Models.API.UserActivity.Response
 {
     public class UserActivity
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
-using CaliphWeb.Models;
+using BeyondCode.Models;
 using Google.Apis.Auth.OAuth2;
 using System.Threading;
 using Google.Apis.Util.Store;
@@ -14,7 +14,7 @@ using Google.Apis.Calendar.v3.Data;
 using System.Threading.Tasks;
 using System.Web.Hosting;
 
-namespace CaliphWeb.Helper
+namespace BeyondCode.Helper
 {
     public class GoogleCalendarHelper
     {

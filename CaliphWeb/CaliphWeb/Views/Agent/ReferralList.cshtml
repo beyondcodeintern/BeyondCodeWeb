@@ -1,7 +1,7 @@
 ﻿
 @{ ViewBag.Title = "Referral"; }
 
-@model CaliphWeb.Models.ViewModel.AgentRecruitmentLeadListViewModel
+@model BeyondCode.Models.ViewModel.AgentRecruitmentLeadListViewModel
 <script src="~/global_assets/js/demo_pages/form_select2.js"></script>
 <!-- Page header -->
 <div class="page-header page-header-light">
@@ -56,7 +56,7 @@
                                 <option value="">All</option>
                                 @foreach (var user in Model.Users)
                                 {
-                                    var selected = user.Username == CaliphWeb.Helper.UserHelper.GetLoginUser() ? "selected" : "";
+                                    var selected = user.Username == BeyondCode.Helper.UserHelper.GetLoginUser() ? "selected" : "";
                             <option value="@user.Username" @selected>@(user.Username+"-"+user.Fullname)</option>
                                 }
 
@@ -95,7 +95,7 @@
     <script type="text/javascript">
 
          function SearchData(page) {
-            @{ var filter = new CaliphWeb.ViewModel.Data.ReferralLeadFilterRequest();
+            @{ var filter = new BeyondCode.ViewModel.Data.ReferralLeadFilterRequest();
                 }
             var searchFilter = @Html.Raw(Json.Encode(filter));
             searchFilter.PageNumber = page;

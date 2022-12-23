@@ -1,4 +1,4 @@
-﻿@model CaliphWeb.Models.ViewModel.Project100ViewModel
+﻿@model BeyondCode.Models.ViewModel.Project100ViewModel
 <style>
     .table {
         width: 100%;
@@ -64,7 +64,7 @@
         var ct = count - loopClientData.Count;
         for (int c = 1; c <= ct; c++)
         {
-            loopClientData.Add(new CaliphWeb.ViewModel.Client());
+            loopClientData.Add(new BeyondCode.ViewModel.Client());
         }
 
         @*<img src=@server.mappath("~/global_assets/images/project100_banner.png") style="width:100%;" object-fit:cover" />*@

@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.API.one2one
+namespace BeyondCode.Models.API.one2one
 {
     public class AgentMapaRequest
     {

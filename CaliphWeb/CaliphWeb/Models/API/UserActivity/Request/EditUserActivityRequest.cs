@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaliphWeb.Models.API.UserActivity.Request
+namespace BeyondCode.Models.API.UserActivity.Request
 {
     public class EditUserActivityRequest {
         public int UserActivityId { get; set; }

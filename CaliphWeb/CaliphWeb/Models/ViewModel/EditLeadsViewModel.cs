@@ -1,11 +1,11 @@
-﻿using CaliphWeb.Models.API;
-using CaliphWeb.Models.API.Deal;
+﻿using BeyondCode.Models.API;
+using BeyondCode.Models.API.Deal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaliphWeb.Models.ViewModel
+namespace BeyondCode.Models.ViewModel
 {
     public class EditLeadsViewModel
     {
