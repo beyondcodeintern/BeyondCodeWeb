@@ -546,9 +546,11 @@
     <Content Include="global_assets\images\browsers\ie.svg" />
     <Content Include="global_assets\images\browsers\opera.svg" />
     <Content Include="global_assets\images\browsers\safari.svg" />
+    <Content Include="global_assets\images\bycc.png" />
     <Content Include="global_assets\images\diagram.svg" />
     <Content Include="global_assets\images\dribbble.png" />
     <Content Include="global_assets\images\error_bg.svg" />
+    <Content Include="global_assets\images\favicon.png" />
     <Content Include="global_assets\images\image.png" />
     <Content Include="global_assets\images\lang\de.png" />
     <Content Include="global_assets\images\lang\es.png" />
@@ -560,13 +562,13 @@
     <Content Include="global_assets\images\login_side.jpg" />
     <Content Include="global_assets\images\login_side2.png" />
     <Content Include="global_assets\images\login_side_new.png" />
+    <Content Include="global_assets\images\logo-white.png" />
     <Content Include="global_assets\images\logo.png" />
     <Content Include="global_assets\images\logo_dark.png" />
     <Content Include="global_assets\images\logo_demo.png" />
     <Content Include="global_assets\images\logo_icon.png" />
     <Content Include="global_assets\images\logo_icon_dark.png" />
     <Content Include="global_assets\images\logo_icon_light.png" />
-    <Content Include="global_assets\images\logo_light.png" />
     <Content Include="global_assets\images\logo_new.png" />
     <Content Include="global_assets\images\logo_orange.png" />
     <Content Include="global_assets\images\pie-chart.png" />
