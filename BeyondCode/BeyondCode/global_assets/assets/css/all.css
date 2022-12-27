@@ -10225,7 +10225,7 @@ button.bg-info-100:hover {
 }
 
 .bg-light-blue {
-    background-color:  #A8A7DE !important;
+    background-color: #556EE7 !important;
 }
 
 a.bg-warning,
@@ -16856,7 +16856,7 @@ label.custom-control {
         .nav-tabs-solid .nav-item.show .nav-link.active,
         .nav-tabs-solid .nav-link.active {
             color: #fff;
-            background-color: #556EE7;
+            background-color: #1f3c88;
         }
 
     .nav-tabs-solid.border .nav-item.show .nav-link.active,
